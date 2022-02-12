@@ -1,2 +1,1 @@
-# Project-Dyplomo
-Mobile game
+# Mobile game
