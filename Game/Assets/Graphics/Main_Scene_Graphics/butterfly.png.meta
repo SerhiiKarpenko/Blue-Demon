@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1f07b34d0f53c99408f95975944eec82
+guid: d68aa68b1e5801e41a2e499ca14fc9be
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: szesternia 1_0
+      name: butterfly_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -142,18 +142,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b862561946e2cb04d8c47777c517fa0e
-      internalID: -1770850266
+      spriteID: 22db596330c10984888a83858272abc3
+      internalID: -145225951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_1
+      name: butterfly_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -163,18 +163,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff3303a25367726479808650f41ce71d
-      internalID: 1529626506
+      spriteID: e10d8590fb6e96c489db3d0198c48b01
+      internalID: -442573360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_2
+      name: butterfly_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -184,18 +184,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2252c336d8fdf9c4682fde6a5da0694b
-      internalID: 1513772092
+      spriteID: c28d2440219a48141a3dd464a8c7120b
+      internalID: -1089244543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_3
+      name: butterfly_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -205,18 +205,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f9d9c518adbc724ba04b1d6fa69aca9
-      internalID: -315598032
+      spriteID: 958c2cfda5a90c24ca70cbe36a49141e
+      internalID: -1107500075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_4
+      name: butterfly_4
       rect:
         serializedVersion: 2
         x: 128
-        y: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -226,18 +226,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c289fc127bab7414897d4a983b531daf
-      internalID: -422373352
+      spriteID: 7b0d1fc2ffc382c43a2e8f2aa97b8f9e
+      internalID: 1855453249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_5
+      name: butterfly_5
       rect:
         serializedVersion: 2
         x: 160
-        y: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -247,18 +247,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11c7ec713a43181469a2fe2f5f0c61a4
-      internalID: -1856556475
+      spriteID: 522c0662258ec48459b217dcd2dbe22a
+      internalID: -664201289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_6
+      name: butterfly_6
       rect:
         serializedVersion: 2
         x: 192
-        y: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -268,18 +268,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7298c27f32a72441b81b985e42aa2c3
-      internalID: 1562840519
+      spriteID: ade0e14aab95bf246af9398bd50c4221
+      internalID: 37203211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_7
+      name: butterfly_7
       rect:
         serializedVersion: 2
         x: 224
-        y: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -289,8 +289,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d3cb41f1e3863c419c25bf94b13cbeb
-      internalID: -1782716967
+      spriteID: b12ed86445428c343a073d6947c18063
+      internalID: 2143060552
       vertices: []
       indices: 
       edges: []
@@ -306,14 +306,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      szesternia 1_4: -422373352
-      szesternia 1_5: -1856556475
-      szesternia 1_6: 1562840519
-      szesternia 1_7: -1782716967
-      szesternia 1_2: 1513772092
-      szesternia 1_1: 1529626506
-      szesternia 1_3: -315598032
-      szesternia 1_0: -1770850266
+      butterfly_1: -442573360
+      butterfly_2: -1089244543
+      butterfly_6: 37203211
+      butterfly_5: -664201289
+      butterfly_0: -145225951
+      butterfly_4: 1855453249
+      butterfly_7: 2143060552
+      butterfly_3: -1107500075
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

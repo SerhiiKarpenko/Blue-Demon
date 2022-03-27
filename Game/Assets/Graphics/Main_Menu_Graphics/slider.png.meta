@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1f07b34d0f53c99408f95975944eec82
+guid: 012e84d0fc5f8064ea272704ee0a2720
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: szesternia 1_0
+      name: slider_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
-        width: 32
-        height: 32
+        y: 0
+        width: 59
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b862561946e2cb04d8c47777c517fa0e
-      internalID: -1770850266
+      spriteID: fa3edab074b211e458bb68e3e03c7a2c
+      internalID: -589123693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_1
+      name: slider_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 224
-        width: 32
-        height: 32
+        x: 59
+        y: 0
+        width: 59
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff3303a25367726479808650f41ce71d
-      internalID: 1529626506
+      spriteID: 41ea6186410e52d4d9305fde38b8564d
+      internalID: -1725263126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_2
+      name: slider_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 224
-        width: 32
-        height: 32
+        x: 118
+        y: 0
+        width: 59
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,113 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2252c336d8fdf9c4682fde6a5da0694b
-      internalID: 1513772092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: szesternia 1_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f9d9c518adbc724ba04b1d6fa69aca9
-      internalID: -315598032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: szesternia 1_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c289fc127bab7414897d4a983b531daf
-      internalID: -422373352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: szesternia 1_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11c7ec713a43181469a2fe2f5f0c61a4
-      internalID: -1856556475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: szesternia 1_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7298c27f32a72441b81b985e42aa2c3
-      internalID: 1562840519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: szesternia 1_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d3cb41f1e3863c419c25bf94b13cbeb
-      internalID: -1782716967
+      spriteID: b334b683a1225ff49816847e6f03b86b
+      internalID: 1375930366
       vertices: []
       indices: 
       edges: []
@@ -306,14 +201,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      szesternia 1_4: -422373352
-      szesternia 1_5: -1856556475
-      szesternia 1_6: 1562840519
-      szesternia 1_7: -1782716967
-      szesternia 1_2: 1513772092
-      szesternia 1_1: 1529626506
-      szesternia 1_3: -315598032
-      szesternia 1_0: -1770850266
+      slider_0: -589123693
+      slider_2: 1375930366
+      slider_1: -1725263126
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

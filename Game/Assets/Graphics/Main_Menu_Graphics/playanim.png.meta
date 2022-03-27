@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1f07b34d0f53c99408f95975944eec82
+guid: 33882bb553a7d2541a004c88b785eebe
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: szesternia 1_0
+      name: playanim_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -142,18 +142,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b862561946e2cb04d8c47777c517fa0e
-      internalID: -1770850266
+      spriteID: e7bb968ba2ba6ed419ef99ff8595864d
+      internalID: -2009808335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_1
+      name: playanim_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 224
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -163,18 +163,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff3303a25367726479808650f41ce71d
-      internalID: 1529626506
+      spriteID: 4374f82ef095ebd4e8442a2fcd52ba44
+      internalID: -884063887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_2
+      name: playanim_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 224
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -184,18 +184,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2252c336d8fdf9c4682fde6a5da0694b
-      internalID: 1513772092
+      spriteID: a9d2b80ca684e334a8aab2c7de943653
+      internalID: -1635221945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_3
+      name: playanim_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 224
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -205,18 +205,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f9d9c518adbc724ba04b1d6fa69aca9
-      internalID: -315598032
+      spriteID: 0572abbd4c6a8b74a99a4c0158e44b8f
+      internalID: -765844669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_4
+      name: playanim_4
       rect:
         serializedVersion: 2
         x: 128
-        y: 224
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -226,18 +226,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c289fc127bab7414897d4a983b531daf
-      internalID: -422373352
+      spriteID: 5667c737d88b57145bdf40d7c66821d1
+      internalID: -1110311655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_5
+      name: playanim_5
       rect:
         serializedVersion: 2
         x: 160
-        y: 224
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -247,18 +247,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11c7ec713a43181469a2fe2f5f0c61a4
-      internalID: -1856556475
+      spriteID: 78c0d873a3003d6458223cf8522832f3
+      internalID: -1689648403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_6
+      name: playanim_6
       rect:
         serializedVersion: 2
         x: 192
-        y: 224
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -268,18 +268,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7298c27f32a72441b81b985e42aa2c3
-      internalID: 1562840519
+      spriteID: 031baf1046ea13840b35cdd8b586286c
+      internalID: -788170113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_7
+      name: playanim_7
       rect:
         serializedVersion: 2
         x: 224
-        y: 224
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -289,8 +289,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d3cb41f1e3863c419c25bf94b13cbeb
-      internalID: -1782716967
+      spriteID: 1d16fe5957d26f44ca9e2d4aa87a33ff
+      internalID: 146526750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playanim_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82459e261bafa74992a79b58300aded
+      internalID: 338938599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playanim_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b92bbed998bbc449831ba0536b619c5
+      internalID: -1174454871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playanim_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a623b1f02bb9b64796c3e7c899213dc
+      internalID: -1844358666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playanim_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c64270313c751b40a93815b1f83628e
+      internalID: 324505424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playanim_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdc6f5f9fe2db046a6d40a2549f9445
+      internalID: 341033250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playanim_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02dcf69b6ca5e21408d3a9ed38bdb332
+      internalID: -946417835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playanim_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e124f2f6bef8a41843d9a22fbf5855
+      internalID: 1272394265
       vertices: []
       indices: 
       edges: []
@@ -306,14 +453,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      szesternia 1_4: -422373352
-      szesternia 1_5: -1856556475
-      szesternia 1_6: 1562840519
-      szesternia 1_7: -1782716967
-      szesternia 1_2: 1513772092
-      szesternia 1_1: 1529626506
-      szesternia 1_3: -315598032
-      szesternia 1_0: -1770850266
+      playanim_6: -788170113
+      playanim_12: 341033250
+      playanim_0: -2009808335
+      playanim_11: 324505424
+      playanim_8: 338938599
+      playanim_1: -884063887
+      playanim_3: -765844669
+      playanim_4: -1110311655
+      playanim_2: -1635221945
+      playanim_10: -1844358666
+      playanim_9: -1174454871
+      playanim_5: -1689648403
+      playanim_7: 146526750
+      playanim_13: -946417835
+      playanim_14: 1272394265
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

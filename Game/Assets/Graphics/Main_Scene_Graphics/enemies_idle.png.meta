@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1f07b34d0f53c99408f95975944eec82
+guid: 8ccbc6117c242864080d8b1cad2fb7a7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,11 +128,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: szesternia 1_0
+      name: enemies_idle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -142,18 +142,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b862561946e2cb04d8c47777c517fa0e
-      internalID: -1770850266
+      spriteID: 6ea1a699f56b61f429ebb529e7b9380d
+      internalID: -605320035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_1
+      name: enemies_idle_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 224
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -163,18 +163,60 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff3303a25367726479808650f41ce71d
-      internalID: 1529626506
+      spriteID: d88e4a1fa11c52748acf483fead0e336
+      internalID: 59395101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_2
+      name: enemies_idle_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ddb6861f286e546aa8ca8dc0ef7482
+      internalID: 538067859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_idle_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b620d8d3f639ac40bcc5e089f80362b
+      internalID: 1154452306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_idle_4
       rect:
         serializedVersion: 2
         x: 64
-        y: 224
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -184,18 +226,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2252c336d8fdf9c4682fde6a5da0694b
-      internalID: 1513772092
+      spriteID: 65da784eb552c6144ab5086922f410a2
+      internalID: 1317284483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_3
+      name: enemies_idle_5
       rect:
         serializedVersion: 2
         x: 96
-        y: 224
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -205,18 +247,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f9d9c518adbc724ba04b1d6fa69aca9
-      internalID: -315598032
+      spriteID: 756e2a20de75b134496ccfd19dfc679c
+      internalID: -210403381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_4
+      name: enemies_idle_6
       rect:
         serializedVersion: 2
         x: 128
-        y: 224
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -226,18 +268,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c289fc127bab7414897d4a983b531daf
-      internalID: -422373352
+      spriteID: 8b6a5eeaa0fb5ae4a842c1353b9a2c6d
+      internalID: -378504557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_5
+      name: enemies_idle_7
       rect:
         serializedVersion: 2
         x: 160
-        y: 224
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -247,18 +289,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11c7ec713a43181469a2fe2f5f0c61a4
-      internalID: -1856556475
+      spriteID: 4cd55427f3cb7824d8949597bd9584b0
+      internalID: 369846401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_6
+      name: enemies_idle_8
       rect:
         serializedVersion: 2
         x: 192
-        y: 224
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -268,18 +310,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7298c27f32a72441b81b985e42aa2c3
-      internalID: 1562840519
+      spriteID: 8d5bb0ec6e666244e8f6d2d5cce1b352
+      internalID: -1705351516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_7
+      name: enemies_idle_9
       rect:
         serializedVersion: 2
         x: 224
-        y: 224
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -289,8 +331,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d3cb41f1e3863c419c25bf94b13cbeb
-      internalID: -1782716967
+      spriteID: e08b1966b9a4eea40a67260b78eefb09
+      internalID: 359337554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_idle_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07a8dff9caffc24ba63d064e9b6e9ba
+      internalID: 1714106751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_idle_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb7f7b3c64798943b1eabc7a7e2c4dc
+      internalID: 14000658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_idle_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff98cba0a212dd41a4754a808f8ec1a
+      internalID: 1936615717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_idle_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6bcd21006449041a7d5c5c5e23738f
+      internalID: 1282958658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_idle_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff20173fddce494b80591dd09ece6f1
+      internalID: 862292397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_idle_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f1626910258574b9440a77fc8bbcd9
+      internalID: -594997702
       vertices: []
       indices: 
       edges: []
@@ -306,14 +474,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      szesternia 1_4: -422373352
-      szesternia 1_5: -1856556475
-      szesternia 1_6: 1562840519
-      szesternia 1_7: -1782716967
-      szesternia 1_2: 1513772092
-      szesternia 1_1: 1529626506
-      szesternia 1_3: -315598032
-      szesternia 1_0: -1770850266
+      enemies_idle_13: 1282958658
+      enemies_idle_4: 1317284483
+      enemies_idle_11: 14000658
+      enemies_idle_14: 862292397
+      enemies_idle_3: 1154452306
+      enemies_idle_5: -210403381
+      enemies_idle_0: -605320035
+      enemies_idle_2: 538067859
+      enemies_idle_12: 1936615717
+      enemies_idle_6: -378504557
+      enemies_idle_7: 369846401
+      enemies_idle_8: -1705351516
+      enemies_idle_9: 359337554
+      enemies_idle_1: 59395101
+      enemies_idle_15: -594997702
+      enemies_idle_10: 1714106751
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1f07b34d0f53c99408f95975944eec82
+guid: 4b31cf0dd953eb247906f7e97657f1ee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: szesternia 1_0
+      name: bac_button_ready_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -142,18 +142,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b862561946e2cb04d8c47777c517fa0e
-      internalID: -1770850266
+      spriteID: 3924e7ec6f0b882428e89a2999f52d97
+      internalID: 1892922586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_1
+      name: bac_button_ready_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -163,18 +163,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff3303a25367726479808650f41ce71d
-      internalID: 1529626506
+      spriteID: 1dfb72e51c032bc43ad6a2fb2c8f2c9b
+      internalID: -320197119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_2
+      name: bac_button_ready_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -184,18 +184,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2252c336d8fdf9c4682fde6a5da0694b
-      internalID: 1513772092
+      spriteID: df27e06287dffbf4abb2b5ebeb324673
+      internalID: 1278681237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_3
+      name: bac_button_ready_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -205,18 +205,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f9d9c518adbc724ba04b1d6fa69aca9
-      internalID: -315598032
+      spriteID: 8e68ae53dc03e4f4ca15dcdaa66674b8
+      internalID: 2087815267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_4
+      name: bac_button_ready_4
       rect:
         serializedVersion: 2
         x: 128
-        y: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -226,18 +226,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c289fc127bab7414897d4a983b531daf
-      internalID: -422373352
+      spriteID: 39e291989d31d744e81a17dc491f26c8
+      internalID: -2083158164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_5
+      name: bac_button_ready_5
       rect:
         serializedVersion: 2
         x: 160
-        y: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -247,18 +247,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11c7ec713a43181469a2fe2f5f0c61a4
-      internalID: -1856556475
+      spriteID: 109ab08fd706bfc4cbcbec2809d43fcc
+      internalID: -1229782388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_6
+      name: bac_button_ready_6
       rect:
         serializedVersion: 2
         x: 192
-        y: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -268,18 +268,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7298c27f32a72441b81b985e42aa2c3
-      internalID: 1562840519
+      spriteID: 7124a95bcedb9bd4db3afadee88ee68d
+      internalID: -939703584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: szesternia 1_7
+      name: bac_button_ready_7
       rect:
         serializedVersion: 2
         x: 224
-        y: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -289,8 +289,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d3cb41f1e3863c419c25bf94b13cbeb
-      internalID: -1782716967
+      spriteID: 82fc7161be0294e40b99195f999572de
+      internalID: -738261422
       vertices: []
       indices: 
       edges: []
@@ -306,14 +306,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      szesternia 1_4: -422373352
-      szesternia 1_5: -1856556475
-      szesternia 1_6: 1562840519
-      szesternia 1_7: -1782716967
-      szesternia 1_2: 1513772092
-      szesternia 1_1: 1529626506
-      szesternia 1_3: -315598032
-      szesternia 1_0: -1770850266
+      bac_button_ready_6: -939703584
+      bac_button_ready_7: -738261422
+      bac_button_ready_4: -2083158164
+      bac_button_ready_5: -1229782388
+      bac_button_ready_1: -320197119
+      bac_button_ready_0: 1892922586
+      bac_button_ready_3: 2087815267
+      bac_button_ready_2: 1278681237
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
