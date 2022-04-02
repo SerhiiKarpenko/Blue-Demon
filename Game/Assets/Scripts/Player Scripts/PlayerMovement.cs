@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 enum MOVING_STATES { up, down, right, left, none };
 
 public class PlayerMovement : MonoBehaviour
