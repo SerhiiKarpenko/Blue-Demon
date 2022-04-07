@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof (PlayerHealth))]
 public class PlayerUI : MonoBehaviour
 {
 	[SerializeField] private Slider _healthBar;

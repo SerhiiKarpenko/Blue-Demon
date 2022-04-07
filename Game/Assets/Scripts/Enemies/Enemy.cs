@@ -1,12 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof (EnemyHealth))]
+[RequireComponent(typeof (SpriteRenderer))]
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private EnemyData _enemyData;
     [SerializeField] private float _speed;
     [SerializeField] private float _damage;
+    [SerializeField] private float _maxDistance;
     [SerializeField] private string _name;
     [SerializeField] private Sprite _sprite;
     [SerializeField] private Transform _player;
@@ -35,12 +36,12 @@ public class Enemy : MonoBehaviour
 
     private void GoTowardsPlayer()
     {
-        if(Vector3.Distance(transform.position, _player.transform.position) > 0.5)
+        if(Vector3.Distance(transform.position, _player.transform.position) > _maxDistance)
             transform.position = Vector3.MoveTowards(transform.position, _player.transform.position, _speed * Time.deltaTime);
     }
 
     private void TurnOnPlayer()
     {
-        gameObject.GetComponent<SpriteRenderer>().flipX = transform.position.x - _player.transform.position.x < 0.0f;
+        GetComponent<SpriteRenderer>().flipX = transform.position.x - _player.transform.position.x < 0.0f;
     }
 }

@@ -34,12 +34,6 @@ public class Buttons_Functionality_script : MonoBehaviour
 		// show options screen
 	}
 
-	public void OnExitButtonClick()
-	{
-		// this function is not necessary, because users will close the game with home button
-		Application.Quit();
-	}
-
 
 	IEnumerator LoadAsynchronously()
     {

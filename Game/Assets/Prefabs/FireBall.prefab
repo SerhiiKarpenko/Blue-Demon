@@ -103,6 +103,7 @@ MonoBehaviour:
   _enemyData: {fileID: 11400000, guid: 2ed7e293290f51045a282070c5f6292e, type: 2}
   _speed: 0
   _damage: 0
+  _maxDistance: 0.3
   _name: 
   _sprite: {fileID: 0}
   _player: {fileID: 0}
