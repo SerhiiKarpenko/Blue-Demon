@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class ObjectPuller : MonoBehaviour
 {
-   [System.Serializable]
-    public class Pool
+	[System.Serializable]
+	public class Pool
 	{
-		public string tag;
-		public GameObject prefab;
-		public int size;
+		public string Tag;
+		public GameObject Prefab;
+		public int Size;
+
+	
 	}
 
     #region Singleton
@@ -29,13 +31,13 @@ public class ObjectPuller : MonoBehaviour
 		foreach(Pool pool in _pools)
 		{
 			Queue<GameObject> objectPool = new Queue<GameObject>();
-			for(int i = 0; i < pool.size; i++)
+			for(int i = 0; i < pool.Size; i++)
 			{
-				GameObject obj = Instantiate(pool.prefab);
+				GameObject obj = Instantiate(pool.Prefab);
 				obj.SetActive(false);
 				objectPool.Enqueue(obj);
 			}
-			_poolDictionary.Add(pool.tag, objectPool);
+			_poolDictionary.Add(pool.Tag, objectPool);
 		}
 	}
 

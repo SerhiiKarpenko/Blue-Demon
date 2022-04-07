@@ -360,6 +360,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134976649}
   m_CullTransparentMesh: 1
+--- !u!1 &175178960 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 332397679922525948, guid: 4e089bf599fc69c4cbb786a0d5d2f88f, type: 3}
+  m_PrefabInstance: {fileID: 332397679464657800}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &280478410
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,7 +756,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8912c49bad0b946a5f6127f42d87a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Instance: {fileID: 0}
 --- !u!1 &518984076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,6 +1317,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &843175628 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2675473998430240588, guid: bcc131b7473f65b44ad4c84a3e6af5de, type: 3}
+  m_PrefabInstance: {fileID: 2675473999694106946}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &952967713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1869,6 +1878,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106067492}
   m_CullTransparentMesh: 1
+--- !u!1 &1142935554 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1092468032072621753, guid: 0160a3ad7b0de264688b5eeb9608ed29, type: 3}
+  m_PrefabInstance: {fileID: 1092468033653812984}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1159677639
 GameObject:
   m_ObjectHideFlags: 0
@@ -2082,15 +2096,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pools:
-  - tag: FireBall
-    prefab: {fileID: 332397679922525948, guid: 4e089bf599fc69c4cbb786a0d5d2f88f, type: 3}
-    size: 20
-  - tag: Bat
-    prefab: {fileID: 1092468032072621753, guid: 0160a3ad7b0de264688b5eeb9608ed29, type: 3}
-    size: 40
-  - tag: BlueDemon
-    prefab: {fileID: 2675473998430240588, guid: bcc131b7473f65b44ad4c84a3e6af5de, type: 3}
-    size: 10
+  - Tag: FireBall
+    Prefab: {fileID: 175178960}
+    Size: 0
+  - Tag: Bat
+    Prefab: {fileID: 1142935554}
+    Size: 0
+  - Tag: BlueDemon
+    Prefab: {fileID: 843175628}
+    Size: 0
 --- !u!1 &1604256400
 GameObject:
   m_ObjectHideFlags: 0

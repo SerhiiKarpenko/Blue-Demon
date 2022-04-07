@@ -8,10 +8,10 @@ public class DeathSceneLoad : MonoBehaviour
 
     private void Start()
     {
-        PlayerHealth.OnDeathEvent += OnPlayerDeath;
+        Events.PlayerDied += LoadlLevelWhenPlayerIsDead;
     }
 
-    private void OnPlayerDeath()
+    private void LoadlLevelWhenPlayerIsDead()
     {
         StartCoroutine(LoadLevel());
     }

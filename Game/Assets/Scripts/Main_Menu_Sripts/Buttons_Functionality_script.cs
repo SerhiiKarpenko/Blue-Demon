@@ -29,11 +29,6 @@ public class Buttons_Functionality_script : MonoBehaviour
 
 	}
 
-	public void OnOptionsButtonClick()
-	{
-		// show options screen
-	}
-
 
 	IEnumerator LoadAsynchronously()
     {

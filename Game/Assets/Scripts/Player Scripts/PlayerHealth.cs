@@ -5,10 +5,7 @@ public class PlayerHealth : HealthAbstract
 	[SerializeField] private float _currentHealth;
 	[SerializeField] private float _maxHealth;
 	public delegate void ChangeHealthBarValue(float currentHealth);
-	public delegate void OnDeath();
 	public static event ChangeHealthBarValue onChangeHp;
-	public static event OnDeath OnDeathEvent;
-	
 
 	public float MaxHealth => _maxHealth;
 
@@ -35,7 +32,7 @@ public class PlayerHealth : HealthAbstract
 	public override void Death()
 	{
 		gameObject.SetActive(false);
-		OnDeathEvent.Invoke();
+		Events.OnPlayerDeath();
 	}
 
 

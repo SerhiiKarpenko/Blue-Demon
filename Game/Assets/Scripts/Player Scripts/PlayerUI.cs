@@ -17,7 +17,10 @@ public class PlayerUI : MonoBehaviour
 		Debug.Log(_healthBar.value);
     }
 
-    public void OnPlayerHealthPointsChange(float newHealth) => _healthBar.value = newHealth;
+    public void OnPlayerHealthPointsChange(float newHealth)
+    {
+		_healthBar.value = newHealth;
+    }
 	public void OnStartGame(float maxHp)
 	{
 		_healthBar.maxValue = maxHp;
