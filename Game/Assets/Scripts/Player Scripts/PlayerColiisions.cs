@@ -4,7 +4,19 @@ using UnityEngine;
 
 public class PlayerColiisions : MonoBehaviour
 {
-    
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.GetComponent<Experience>() != null)
+        {
+            float amount = collision.gameObject.GetComponent<Experience>().Amount;
+            Events.OnPlayerLevelUp();
+            Events.OnPlayerExperienceAmountChanged(amount);
+            GetComponent<PlayerLevel>().UpdateCurrentExperienceValue(amount);
+            Destroy(collision.gameObject);
+        }
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.gameObject.GetComponent<Enemy>() != null)

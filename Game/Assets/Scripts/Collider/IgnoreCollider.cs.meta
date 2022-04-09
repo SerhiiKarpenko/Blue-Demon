@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 2a9a30cee1a67784680cb7c6c3b9725c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _swordCollider: {fileID: 4589221347375438152, guid: 748c7b982fd5e33419ea8855bab2f7cf, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

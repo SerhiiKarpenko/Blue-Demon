@@ -8,7 +8,7 @@ public class SwordRotatingAroundPlayer : MonoBehaviour
 
     private void Start()
     {
-        _rotationSpeed = GetComponent<SwordStats>().RotationSpeed;
+        _rotationSpeed = GetComponent<SwordStats>().SetRotationSpeed();
     }
 
     private void Update()

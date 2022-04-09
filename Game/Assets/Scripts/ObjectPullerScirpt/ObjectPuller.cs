@@ -11,7 +11,12 @@ public class ObjectPuller : MonoBehaviour
 		public GameObject Prefab;
 		public int Size;
 
-	
+		public Pool(string tag, GameObject prefab, int size)
+        {
+			Tag = tag;
+			Prefab = prefab;
+			Size = size;
+        }
 	}
 
     #region Singleton

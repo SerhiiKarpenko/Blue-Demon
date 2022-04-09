@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class PlayerHealth : HealthAbstract
 {
+	[SerializeField] private GameObject _playerUI;
 	[SerializeField] private float _currentHealth;
 	[SerializeField] private float _maxHealth;
 	public delegate void ChangeHealthBarValue(float currentHealth);
 	public static event ChangeHealthBarValue onChangeHp;
+
 
 	public float MaxHealth => _maxHealth;
 
@@ -18,7 +20,7 @@ public class PlayerHealth : HealthAbstract
 	{
 		if(amount < 0)
 		{
-			throw new System.ArgumentOutOfRangeException("Cannot apply negative damage");
+			throw new System.ArgumentOutOfRangeException("Cannot apply negative Damage");
 		}
 
 		if (_currentHealth <= 0)
@@ -32,6 +34,7 @@ public class PlayerHealth : HealthAbstract
 	public override void Death()
 	{
 		gameObject.SetActive(false);
+		_playerUI.SetActive(false);
 		Events.OnPlayerDeath();
 	}
 

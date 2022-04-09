@@ -8,15 +8,19 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private float _damage;
     [SerializeField] private float _maxDistance;
+    [SerializeField] private float _amountOfExperienceToDrop;
     [SerializeField] private string _name;
     [SerializeField] private Sprite _sprite;
     [SerializeField] private Transform _player;
 
     public float Damage => _damage;
+    public float AmountOfExperienceToDrop => _amountOfExperienceToDrop;
 
-    private void Start()
+
+    private void Awake()
     {
         SetEnemyData();
+        Debug.Log(_amountOfExperienceToDrop);
     }
 
     private void Update()
@@ -27,10 +31,11 @@ public class Enemy : MonoBehaviour
 
     private void SetEnemyData()
     {
-        GetComponent<EnemyHealth>().SetHealth(_enemyData.healthPoints, _enemyData.healthPoints);
-        _speed = _enemyData.speed;
-        _damage = _enemyData.damage;
-        _name = _enemyData.name;
+        GetComponent<EnemyHealth>().SetHealth(_enemyData.HealthPoints, _enemyData.HealthPoints);
+        _amountOfExperienceToDrop = _enemyData.AmountexperienceToDrop;
+        _speed = _enemyData.Speed;
+        _damage = _enemyData.Damage;
+        _name = _enemyData.Name;
         _sprite = _enemyData.sprite;
     }
 

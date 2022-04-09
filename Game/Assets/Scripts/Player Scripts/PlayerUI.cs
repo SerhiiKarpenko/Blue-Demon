@@ -1,29 +1,49 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 [RequireComponent(typeof (PlayerHealth))]
+[RequireComponent(typeof(PlayerLevel))]
 public class PlayerUI : MonoBehaviour
 {
 	[SerializeField] private Slider _healthBar;
+	[SerializeField] private Slider _experienceBar;
+	[SerializeField] private TextMeshProUGUI _playerLevelText;
 
 	private void Start()
 	{
-		OnStartGame(GetComponent<PlayerHealth>().MaxHealth);
+		SetHealthBarOnStartGame(GetComponent<PlayerHealth>().MaxHealth);
+		SetExperienceBarOnStartGame();
 		PlayerHealth.onChangeHp += OnPlayerHealthPointsChange;
+		Events.OnPlayerExperienceChanged += ChangeExperienceSliderValue;
+		Events.OnPlayerLevelChanged += UpdatePlayerLevlText;
 	}
-
-    private void Update()
-    {
-		Debug.Log(_healthBar.value);
-    }
 
     public void OnPlayerHealthPointsChange(float newHealth)
     {
 		_healthBar.value = newHealth;
     }
-	public void OnStartGame(float maxHp)
+	public void SetHealthBarOnStartGame(float maxHp)
 	{
 		_healthBar.maxValue = maxHp;
 		_healthBar.value = _healthBar.maxValue;
 	}
+
+	public void SetExperienceBarOnStartGame()
+    {
+		_experienceBar.maxValue = GetComponent<PlayerLevel>().AmountToNextLevel;
+		_experienceBar.value = GetComponent<PlayerLevel>().CurrentAmountOfExperience;
+	}
+
+	public void ChangeExperienceSliderValue(float newAmount)
+    {
+		_experienceBar.value = newAmount;
+    }
+
+	public void UpdatePlayerLevlText(int newLevel)
+    {
+		_playerLevelText.text = "Level:" + " " + newLevel.ToString();
+    }
+
+
 }
