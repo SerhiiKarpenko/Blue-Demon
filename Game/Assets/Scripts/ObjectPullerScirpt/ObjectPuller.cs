@@ -17,6 +17,8 @@ public class ObjectPuller : MonoBehaviour
 			Prefab = prefab;
 			Size = size;
         }
+
+        
 	}
 
     #region Singleton
@@ -58,6 +60,17 @@ public class ObjectPuller : MonoBehaviour
 		objectToSpawn.transform.position = spawnPosition;
 		objectToSpawn.transform.rotation = spawnRotation;
 		_poolDictionary[tag].Enqueue(objectToSpawn);
-		return objectToSpawn;	
+		return objectToSpawn;
 	}
+
+	public void SetNewSizeToPool(string tag, int size)
+    {
+		foreach(Pool pool in _pools)
+        {
+			if(pool.Tag == tag)
+            {
+				pool.Size = size;
+            }
+        }
+    }
 }

@@ -23,6 +23,11 @@ public class Enemy : MonoBehaviour
         Debug.Log(_amountOfExperienceToDrop);
     }
 
+    private void Start()
+    {
+        _player = PlayerInstance.Instance.gameObject.GetComponent<Transform>();
+    }
+
     private void Update()
     {
         GoTowardsPlayer();
@@ -37,6 +42,7 @@ public class Enemy : MonoBehaviour
         _damage = _enemyData.Damage;
         _name = _enemyData.Name;
         _sprite = _enemyData.sprite;
+
     }
 
     private void GoTowardsPlayer()

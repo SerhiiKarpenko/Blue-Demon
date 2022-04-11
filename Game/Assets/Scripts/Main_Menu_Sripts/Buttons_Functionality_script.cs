@@ -7,11 +7,8 @@ using UnityEngine.UI;
 [RequireComponent(typeof (SaveStatsForSword))]
 public class Buttons_Functionality_script : MonoBehaviour
 {
-	[SerializeField] private Image scroll;
-	[SerializeField] private Image[] candles;
-	[SerializeField] private Slider loadingProccesSlider;
-	[SerializeField] private GameObject sliderHolder;
-	[SerializeField] private Button playButton;
+	[SerializeField] private Animator _transitionToMainScene;
+	[SerializeField] private GameObject _mainSceneLoaderObject;
 	private SaveStatsForSword _saveStatsForSword;
     //[SerializeField] private GameObject LoadingScreen;
 
@@ -23,33 +20,18 @@ public class Buttons_Functionality_script : MonoBehaviour
 
     public void OnPlayButtonClick()
 	{
-		//load the main scene, or character choose screen
-		/* first play animation, second loading screen, finaly main scene */ 
-
-		for (int i = 0; i < candles.Length; i++)
-			candles[i].enabled = false;
-
-		scroll.enabled = false;
-		playButton.enabled = false;
-
-		StartCoroutine(LoadAsynchronously());
-
+		StartCoroutine(LoadMainScene());
 	}
 
 
-	IEnumerator LoadAsynchronously()
+	IEnumerator LoadMainScene()
     {
-		AsyncOperation operation = SceneManager.LoadSceneAsync("Main_Scene");
-		sliderHolder.SetActive(true);
-		while (!operation.isDone)
-        {
-			//Debug.Log(loadingProccesSlider.value);
-			float progress = Mathf.Clamp01(operation.progress / .9f);
-			loadingProccesSlider.value = progress;
-			//Debug.Log(loadingProccesSlider.value);
-			
-			yield return null;
-        }
+		_mainSceneLoaderObject.SetActive(true);
+		_transitionToMainScene.SetTrigger("play");
+		
+		yield return new WaitForSeconds(1.30f);
+
+		SceneManager.LoadScene("Main_Scene");
 	}
 
 	public void OnFirstSwordClick()
@@ -81,13 +63,4 @@ public class Buttons_Functionality_script : MonoBehaviour
 		_saveStatsForSword.GetSwordDamageSpeedSprite(4);
 		OnPlayButtonClick();
 	}
-	
-
-	// test method
-	public void Test()
-    {
-		loadingProccesSlider.enabled = true;
-		sliderHolder.SetActive(true);
-	}
-
 }

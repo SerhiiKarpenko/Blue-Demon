@@ -2,8 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(PlayerLevel))]
 public class PlayerColiisions : MonoBehaviour
 {
+    private PlayerLevel _playerLevel;
+
+    private void Start()
+    {
+        _playerLevel = GetComponent<PlayerLevel>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -11,8 +18,7 @@ public class PlayerColiisions : MonoBehaviour
         {
             float amount = collision.gameObject.GetComponent<Experience>().Amount;
             Events.OnPlayerLevelUp();
-            Events.OnPlayerExperienceAmountChanged(amount);
-            GetComponent<PlayerLevel>().UpdateCurrentExperienceValue(amount);
+            _playerLevel.UpdateCurrentExperienceValue(amount);
             Destroy(collision.gameObject);
         }
     }

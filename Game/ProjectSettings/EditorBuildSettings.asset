@@ -18,4 +18,5 @@ EditorBuildSettings:
     path: Assets/Scenes/DeathScreen.unity
     guid: 4499c338ef9e4294cb6710ec471fbb4e
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: a4f6114d0f3c31b4f9fb18d575ef7b24, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 129bf5a14659a3640bb4a0fe565c0ba5, type: 2}

@@ -6,8 +6,6 @@ public class EnemyUI : MonoBehaviour
 {
     [SerializeField] private Slider _healthPointSlider;
     [SerializeField] private Vector3 _offset;
-
-
     private void Start()
     {
         _healthPointSlider.maxValue = GetComponentInParent<EnemyHealth>().MaxHealth;

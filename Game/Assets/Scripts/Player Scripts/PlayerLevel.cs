@@ -15,6 +15,7 @@ public class PlayerLevel : MonoBehaviour
     private void Start()
     {
         Events.PlayerLevelUp += PlayerLevelUp;
+        //Events.OnPlayerExperienceChanged += UpdateCurrentExperienceValue;
         _experienceSlider.maxValue = _amoutToNextLevel;
         _experienceSlider.value = _currentAmount;
     }
@@ -35,5 +36,6 @@ public class PlayerLevel : MonoBehaviour
     public void UpdateCurrentExperienceValue(float amount)
     {
         _currentAmount += amount;
+        Events.OnPlayerExperienceAmountChanged(_currentAmount);
     }
 }

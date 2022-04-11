@@ -33,6 +33,7 @@ public class EnemyHealth : HealthAbstract
 	public override void Death()
 	{
 		base.Death();
+		//gameObject.SetActive(false);
 		GameObject stone = Instantiate(_experienceStone, transform.position, Quaternion.identity);
 		_experience = stone.GetComponent<Experience>();
 		_experience.SetAmount(GetComponent<Enemy>().AmountOfExperienceToDrop);

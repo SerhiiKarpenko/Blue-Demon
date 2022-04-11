@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthPoints: 30
   Damage: 0.4
-  Speed: 3
+  Speed: 2.5
   AmountexperienceToDrop: 5
   Name: FireBall
   sprite: {fileID: 1182409048, guid: 0f0d90cdfc24fb842a02fd91d4c2793e, type: 3}
