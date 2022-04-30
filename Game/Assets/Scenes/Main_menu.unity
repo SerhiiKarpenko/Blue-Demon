@@ -5469,6 +5469,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 4 Sword
       objectReference: {fileID: 0}
+    - target: {fileID: 3402266605138262471, guid: c56aa479dfc361b4d8bca96246965f70, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1104718869}
+    - target: {fileID: 3402266605138262471, guid: c56aa479dfc361b4d8bca96246965f70, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnFourthSwordClick
+      objectReference: {fileID: 0}
     - target: {fileID: 3402266606526505481, guid: c56aa479dfc361b4d8bca96246965f70, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.00030517578
@@ -6900,7 +6908,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.34600002, y: 0.19011505}
   m_AnchorMax: {x: 0.37352085, y: 0.24100001}
-  m_AnchoredPosition: {x: 12.5234375, y: 6.842819}
+  m_AnchoredPosition: {x: 12.5234375, y: 6.8432465}
   m_SizeDelta: {x: -1.7481, y: -0.7483}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &2145892371

@@ -30,10 +30,11 @@ public class EnemyHealth : HealthAbstract
 		_currentHealth = currentHealth;
 	}
 
-	public override void Death()
+
+    public override void Death()
 	{
 		base.Death();
-		//gameObject.SetActive(false);
+		gameObject.SetActive(false);
 		GameObject stone = Instantiate(_experienceStone, transform.position, Quaternion.identity);
 		_experience = stone.GetComponent<Experience>();
 		_experience.SetAmount(GetComponent<Enemy>().AmountOfExperienceToDrop);
