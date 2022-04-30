@@ -1,7 +1,9 @@
 using UnityEngine;
 
+[RequireComponent(typeof(PlayerLevel))]
 public class PlayerHealth : HealthAbstract
 {
+	[SerializeField] private PlayerLevel _currentLevel;
 	[SerializeField] private GameObject _playerUI;
 	[SerializeField] private float _currentHealth;
 	[SerializeField] private float _maxHealth;
@@ -13,6 +15,7 @@ public class PlayerHealth : HealthAbstract
 
 	private void Start()
 	{
+		_currentLevel = gameObject.GetComponent<PlayerLevel>();
 		_currentHealth = _maxHealth;
 	}
 
@@ -35,6 +38,7 @@ public class PlayerHealth : HealthAbstract
 	{
 		gameObject.SetActive(false);
 		_playerUI.SetActive(false);
+		PlayerPrefs.SetInt("Player_level", _currentLevel.CurrentLevel);
 		Events.OnPlayerDeath();
 	}
 
