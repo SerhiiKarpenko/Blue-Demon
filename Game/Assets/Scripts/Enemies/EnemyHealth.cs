@@ -38,6 +38,7 @@ public class EnemyHealth : HealthAbstract
 		GameObject stone = Instantiate(_experienceStone, transform.position, Quaternion.identity);
 		_experience = stone.GetComponent<Experience>();
 		_experience.SetAmount(GetComponent<Enemy>().AmountOfExperienceToDrop);
+		Events.OnKilledEnemyCounterRisedUp();
 	}
 
 

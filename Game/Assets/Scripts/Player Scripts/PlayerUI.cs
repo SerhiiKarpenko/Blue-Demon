@@ -9,6 +9,7 @@ public class PlayerUI : MonoBehaviour
 	[SerializeField] private Slider _healthBar;
 	[SerializeField] private Slider _experienceBar;
 	[SerializeField] private TextMeshProUGUI _playerLevelText;
+	[SerializeField] private TextMeshProUGUI _killedEnemyCounterText;
 
 	private void Start()
 	{
@@ -17,6 +18,7 @@ public class PlayerUI : MonoBehaviour
 		PlayerHealth.onChangeHp += OnPlayerHealthPointsChange;
 		Events.OnPlayerExperienceChanged += ChangeExperienceSliderValue;
 		Events.OnPlayerLevelChanged += UpdatePlayerLevlText;
+		Events.CounterRisedUp += ChangeKilledEnemyCounterValue;
 	}
 
     public void OnPlayerHealthPointsChange(float newHealth)
@@ -43,6 +45,11 @@ public class PlayerUI : MonoBehaviour
 	public void UpdatePlayerLevlText(int newLevel)
     {
 		_playerLevelText.text = "Level:" + " " + newLevel.ToString();
+    }
+
+	public void ChangeKilledEnemyCounterValue(int countOfKilledEnemy)
+    {
+		_killedEnemyCounterText.text = "Enemies killed: " + countOfKilledEnemy.ToString();
     }
 
 
