@@ -22,6 +22,6 @@ public class DeathSceneLoad : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
 
-        SceneManager.LoadScene("DeathScreen");
+        SceneManager.LoadScene("Death_Screen");
     }
 }

@@ -3,10 +3,10 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerLevel))]
 public class PlayerHealth : HealthAbstract
 {
-	[SerializeField] private PlayerLevel _currentLevel;
 	[SerializeField] private GameObject _playerUI;
 	[SerializeField] private float _currentHealth;
 	[SerializeField] private float _maxHealth;
+	private PlayerLevel _currentLevel;
 	public delegate void ChangeHealthBarValue(float currentHealth);
 	public static event ChangeHealthBarValue onChangeHp;
 

@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Main_Scene.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
   - enabled: 1
-    path: Assets/Scenes/DeathScreen.unity
+    path: Assets/Scenes/Death_Screen.unity
     guid: 4499c338ef9e4294cb6710ec471fbb4e
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: a4f6114d0f3c31b4f9fb18d575ef7b24, type: 2}

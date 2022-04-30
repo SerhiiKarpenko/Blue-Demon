@@ -29,7 +29,7 @@ public class Buttons_Functionality_script : MonoBehaviour
 		_mainSceneLoaderObject.SetActive(true);
 		_transitionToMainScene.SetTrigger("play");
 		
-		yield return new WaitForSeconds(1.30f);
+		yield return new WaitForSeconds(2.0f);
 
 		SceneManager.LoadScene("Main_Scene");
 	}

@@ -625,10 +625,10 @@ RectTransform:
   m_Father: {fileID: 1732879734}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.11925}
-  m_AnchorMax: {x: 0.7362501, y: 0.5}
-  m_AnchoredPosition: {x: -96.286064, y: -51.300003}
-  m_SizeDelta: {x: 341.7019, y: -114}
+  m_AnchorMin: {x: 0.165, y: 0.12727779}
+  m_AnchorMax: {x: 0.8325001, y: 0.22000001}
+  m_AnchoredPosition: {x: -0.7860718, y: 0.2000122}
+  m_SizeDelta: {x: -3.2980957, y: -5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1077361110
 MonoBehaviour:
@@ -673,7 +673,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1732879735}
+        m_TargetAssemblyTypeName: ButtonsOnDeathScene, Assembly-CSharp
+        m_MethodName: OnBackToMenuButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1077361111
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -715,10 +727,10 @@ RectTransform:
   m_Father: {fileID: 1732879734}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 27, y: 120}
-  m_SizeDelta: {x: 603.51, y: 64.0632}
+  m_AnchorMin: {x: 0.15375, y: 0.72736114}
+  m_AnchorMax: {x: 1, y: 0.9093612}
+  m_AnchoredPosition: {x: 1.122406, y: -0.5}
+  m_SizeDelta: {x: -2.245, y: -4.9368}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1107751561
 MonoBehaviour:
@@ -1005,7 +1017,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1226193214
 RectTransform:
@@ -1061,10 +1073,10 @@ RectTransform:
   m_Father: {fileID: 1732879734}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 27.000006, y: 45.967995}
-  m_SizeDelta: {x: 603.505, y: 64.0632}
+  m_AnchorMin: {x: 0.15375, y: 0.5316389}
+  m_AnchorMax: {x: 1, y: 0.71400005}
+  m_AnchoredPosition: {x: 1.1239929, y: 0.9682007}
+  m_SizeDelta: {x: -2.248001, y: -1.9363999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1250535284
 MonoBehaviour:
@@ -1242,6 +1254,8 @@ GameObject:
   - component: {fileID: 1732879733}
   - component: {fileID: 1732879732}
   - component: {fileID: 1732879731}
+  - component: {fileID: 1732879735}
+  - component: {fileID: 1732879736}
   m_Layer: 5
   m_Name: DeathScreenUI
   m_TagString: Untagged
@@ -1333,6 +1347,35 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1732879735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732879730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c39e04fd28c50645af1fcd973193966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1732879736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732879730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adbe180876c7be04b99f2001484bd89e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Note: first element in (TEXTS ON DEATH SCENE) array will be ENEMIES KILLED TEXT,
+    second PLAYER LEVEL TEXT
+  _textsOnDeathScene:
+  - {fileID: 1107751561}
+  - {fileID: 1250535284}
 --- !u!1 &1765563874
 GameObject:
   m_ObjectHideFlags: 0
