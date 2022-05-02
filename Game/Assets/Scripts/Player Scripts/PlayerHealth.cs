@@ -6,17 +6,43 @@ public class PlayerHealth : HealthAbstract
 	[SerializeField] private GameObject _playerUI;
 	[SerializeField] private float _currentHealth;
 	[SerializeField] private float _maxHealth;
+	[SerializeField] private float _healPower;
+	[SerializeField] private float _timeWaitToHeal;
+	private float _timer;
 	private PlayerLevel _currentLevel;
+	public bool isAtacked = false;
 	public delegate void ChangeHealthBarValue(float currentHealth);
 	public static event ChangeHealthBarValue onChangeHp;
 
-
 	public float MaxHealth => _maxHealth;
+	public float CurrentHealth => _currentHealth;
 
-	private void Start()
+
+    private void Awake()
+    {
+		_timer = _timeWaitToHeal;
+    }
+
+    private void Start()
 	{
 		_currentLevel = gameObject.GetComponent<PlayerLevel>();
 		_currentHealth = _maxHealth;
+	}
+
+	private void Update()
+	{
+		if(!isAtacked && _currentHealth < MaxHealth)
+        {
+			_timer -= Time.deltaTime;
+			if(_timer <= 0)
+            {
+				Heal();
+            }
+        }
+		else
+        {
+			_timer = _timeWaitToHeal;
+        }
 	}
 
 	public override void ApplyDamage(float amount)
@@ -43,11 +69,20 @@ public class PlayerHealth : HealthAbstract
 	}
 
 
-	// корутин ? 
-	public void Heal()
+	private void Heal()
 	{
-		// если героя никто не ударяет на протяжении 2 секунд, здоровье начинает восполнятся 
+		// если героя никто не ударяет на протяжении _timeWaitToHeal секунд, здоровье начинает восполнятся 
+		if (_currentHealth + _healPower > _maxHealth)
+		{
+			_currentHealth = _maxHealth;
+			onChangeHp?.Invoke(_currentHealth);
+		}
+		else
+		{
+			_currentHealth += _healPower;
+			onChangeHp?.Invoke(_currentHealth);
+		}
 	}
 
-
+	
 }

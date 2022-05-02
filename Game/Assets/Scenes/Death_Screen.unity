@@ -627,7 +627,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.165, y: 0.12727779}
   m_AnchorMax: {x: 0.8325001, y: 0.22000001}
-  m_AnchoredPosition: {x: -0.7860718, y: 0.2000122}
+  m_AnchoredPosition: {x: -0.7861328, y: 0.2000122}
   m_SizeDelta: {x: -3.2980957, y: -5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1077361110
@@ -729,7 +729,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.15375, y: 0.72736114}
   m_AnchorMax: {x: 1, y: 0.9093612}
-  m_AnchoredPosition: {x: 1.122406, y: -0.5}
+  m_AnchoredPosition: {x: 1.1224365, y: -0.5}
   m_SizeDelta: {x: -2.245, y: -4.9368}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1107751561
@@ -1075,7 +1075,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.15375, y: 0.5316389}
   m_AnchorMax: {x: 1, y: 0.71400005}
-  m_AnchoredPosition: {x: 1.1239929, y: 0.9682007}
+  m_AnchoredPosition: {x: 1.1240234, y: 0.9682007}
   m_SizeDelta: {x: -2.248001, y: -1.9363999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1250535284
@@ -1371,7 +1371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adbe180876c7be04b99f2001484bd89e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Note: first element in (TEXTS ON DEATH SCENE) array will be ENEMIES KILLED TEXT,
+  _note: first element of ( TEXTS ON DEATH SCENE) array wiil be ENEMIES KILLED TEXT,
     second PLAYER LEVEL TEXT
   _textsOnDeathScene:
   - {fileID: 1107751561}

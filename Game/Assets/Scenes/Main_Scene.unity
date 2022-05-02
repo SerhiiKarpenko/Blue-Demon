@@ -172,10 +172,10 @@ RectTransform:
   m_Father: {fileID: 125110071}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.018328948, y: 0.63838893}
-  m_AnchorMax: {x: 0.27867106, y: 0.6853056}
-  m_AnchoredPosition: {x: -0.39990234, y: 0}
-  m_SizeDelta: {x: -4.3549805, y: -6.4367676}
+  m_AnchorMin: {x: 0.018328948, y: 0.63500005}
+  m_AnchorMax: {x: 0.34600002, y: 0.6853056}
+  m_AnchoredPosition: {x: -4.7927246, y: 2.5}
+  m_SizeDelta: {x: -13.140701, y: -11.4368}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &65390608
 MonoBehaviour:
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Enemies killed: '
+  m_text: 'Enemies killed: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f2964867f1f754f45bfe12a8b6997127, type: 2}
   m_sharedMaterial: {fileID: -744931765424585776, guid: f2964867f1f754f45bfe12a8b6997127, type: 2}
@@ -587,6 +587,9 @@ MonoBehaviour:
   _playerUI: {fileID: 125110067}
   _currentHealth: 0
   _maxHealth: 100
+  _healPower: 0.3
+  _timeWaitToHeal: 2
+  isAtacked: 0
 --- !u!114 &280478415
 MonoBehaviour:
   m_ObjectHideFlags: 0

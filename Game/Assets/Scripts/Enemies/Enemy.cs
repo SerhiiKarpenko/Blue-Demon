@@ -42,7 +42,6 @@ public class Enemy : MonoBehaviour
         _damage = _enemyData.Damage;
         _name = _enemyData.Name;
         _sprite = _enemyData.sprite;
-
     }
 
     private void GoTowardsPlayer()
