@@ -31,6 +31,7 @@ public class PlayerHealth : HealthAbstract
 
 	private void Update()
 	{
+		// if player is not atacked _timeWaitToHeal second's, then HEAL 
 		if(!isAtacked && _currentHealth < MaxHealth)
         {
 			_timer -= Time.deltaTime;
@@ -71,7 +72,6 @@ public class PlayerHealth : HealthAbstract
 
 	private void Heal()
 	{
-		// если героя никто не ударяет на протяжении _timeWaitToHeal секунд, здоровье начинает восполнятся 
 		if (_currentHealth + _healPower > _maxHealth)
 		{
 			_currentHealth = _maxHealth;
@@ -83,6 +83,12 @@ public class PlayerHealth : HealthAbstract
 			onChangeHp?.Invoke(_currentHealth);
 		}
 	}
+
+	public void SetHealPower(float healPower)
+    {
+		_healPower = healPower;
+    }
+
 
 	
 }

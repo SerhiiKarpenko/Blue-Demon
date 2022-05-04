@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerLevel))]
+[RequireComponent(typeof(PlayerHealth))]
 public class PlayerColiisions : MonoBehaviour
 {
 	private PlayerLevel _playerLevel;
@@ -57,8 +58,6 @@ public class PlayerColiisions : MonoBehaviour
 		{
 			_playerHealth.isAtacked = true;
 		}
-        
-		//Debug.Log(colliders.name);
 	}
 
 	private void OnDrawGizmos()
