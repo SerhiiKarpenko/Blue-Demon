@@ -84,11 +84,8 @@ public class PlayerHealth : HealthAbstract
 		}
 	}
 
-	public void SetHealPower(float healPower)
+	public void IncreaseMaxHealth(float maxHealth)
     {
-		_healPower = healPower;
+		_maxHealth = maxHealth;
     }
-
-
-	
 }

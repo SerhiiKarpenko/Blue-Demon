@@ -65,6 +65,11 @@ public class PlayerMovement : MonoBehaviour
 		_playerAnimator.SetInteger("Moves", 1);
 	}
 
+	public void IncreasePlayerMoveSpeed(float speed)
+    {
+		_speed += speed;
+    }
+
 
 
 }

@@ -19,4 +19,9 @@ public class SwortAtack : MonoBehaviour
         }
     }
 
+    public void IncreaseSwordDamage(float swordDamage)
+    {
+        _swordDamage += swordDamage;
+    }
+
 }
