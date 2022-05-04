@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 92b1d5cb9bd8cd144b65aaef91701962
+guid: 988c1191ed326a742b819639688182fa
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - _skillData: {fileID: 11400000, guid: d18fedaf05a5c5041b72854bf4601cac, type: 2}
+  - _skillData: {fileID: 11400000, guid: cff881728c0c1ba4fa71dad0cd697807, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

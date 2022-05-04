@@ -3,6 +3,7 @@ using UnityEngine;
 public class SwortAtack : MonoBehaviour
 {
     [SerializeField] private float _swordDamage;
+    
 
     private void Start()
     {

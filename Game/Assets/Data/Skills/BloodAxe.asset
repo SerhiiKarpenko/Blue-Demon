@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: -1310102683, guid: e874c391735c3264ca466e28333d4b4a, type: 3}
   Name: Blood axe
-  Description: 
+  Description: 'This axe will help you in your battle '

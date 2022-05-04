@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class PlayerLevel : MonoBehaviour
 {
+    [SerializeField] private SkillCanvasManager _skillCanvasManager;
     [SerializeField] private Slider _experienceSlider;
     [SerializeField] private float _amoutToNextLevel;
     private float _currentAmount = 0;
@@ -30,6 +31,7 @@ public class PlayerLevel : MonoBehaviour
             _experienceSlider.maxValue = _amoutToNextLevel;
             _currentLevel++;
             Events.PlayerLevelChange(_currentLevel);
+            _skillCanvasManager.ShowSkills();
         }
     }
 

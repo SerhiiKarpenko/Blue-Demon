@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DamageUp
   m_EditorClassIdentifier: 
   Icon: {fileID: -187096911, guid: e874c391735c3264ca466e28333d4b4a, type: 3}
-  Name: 
-  Description: 
+  Name: Damage up
+  Description: Increases your sword damage

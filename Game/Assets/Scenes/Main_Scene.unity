@@ -236,7 +236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &64599537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1012,6 +1012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8330ff1f0918ed642a906e52e02a1f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _skillCanvasManager: {fileID: 1612284207}
   _experienceSlider: {fileID: 641399861}
   _amoutToNextLevel: 30
 --- !u!114 &280478421
@@ -2285,7 +2286,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 603999902}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1612284207}
+        m_TargetAssemblyTypeName: SkillCanvasManager, Assembly-CSharp
+        m_MethodName: OnSkillSlotClikc
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &603999902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4439,6 +4452,77 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604256400}
   m_CullTransparentMesh: 1
+--- !u!1 &1612284206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1612284208}
+  - component: {fileID: 1612284207}
+  m_Layer: 0
+  m_Name: SkillCanvasManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1612284207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612284206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af80ed59129a5e4428b6c26f8c6e361d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _skillDatas:
+  - {fileID: 11400000, guid: 1c1d341ed4780ed48ae0f3971d1c131a, type: 2}
+  - {fileID: 11400000, guid: 7b3e620028edaed44a08fcc8b611c480, type: 2}
+  - {fileID: 11400000, guid: 3c251a5c3053a5e418fb75b4ab1c5a96, type: 2}
+  - {fileID: 11400000, guid: 05b44dca9808b564495e739f7bfe1358, type: 2}
+  - {fileID: 11400000, guid: f8a5f1ea27322a8459388ae48e4dd43c, type: 2}
+  - {fileID: 11400000, guid: d18fedaf05a5c5041b72854bf4601cac, type: 2}
+  - {fileID: 11400000, guid: cff881728c0c1ba4fa71dad0cd697807, type: 2}
+  - {fileID: 11400000, guid: 3be66548d692ed84794e1e5669671d86, type: 2}
+  _skillSlots:
+  - {fileID: 603999899}
+  - {fileID: 1615686704}
+  - {fileID: 1888284691}
+  _skillsCanvas: {fileID: 64599536}
+  _skillImages:
+  - {fileID: 1916190283}
+  - {fileID: 1860846875}
+  - {fileID: 1223790343}
+  _skillNames:
+  - {fileID: 929602105}
+  - {fileID: 200538812}
+  - {fileID: 1670656601}
+  _skillDescription:
+  - {fileID: 1854845111}
+  - {fileID: 1908394039}
+  - {fileID: 1948882681}
+  _player: {fileID: 280478410}
+--- !u!4 &1612284208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612284206}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1615686704
 GameObject:
   m_ObjectHideFlags: 0
@@ -4524,7 +4608,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1615686707}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1612284207}
+        m_TargetAssemblyTypeName: SkillCanvasManager, Assembly-CSharp
+        m_MethodName: OnSkillSlotClikc
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1615686707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5903,7 +5999,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1888284694}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1612284207}
+        m_TargetAssemblyTypeName: SkillCanvasManager, Assembly-CSharp
+        m_MethodName: OnSkillSlotClikc
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1888284694
 MonoBehaviour:
   m_ObjectHideFlags: 0

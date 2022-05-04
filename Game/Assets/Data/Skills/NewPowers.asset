@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: NewPowers
   m_EditorClassIdentifier: 
   Icon: {fileID: -155011645, guid: e874c391735c3264ca466e28333d4b4a, type: 3}
-  Name: 
-  Description: 
+  Name: New powers
+  Description: Increases your health points
