@@ -1,8 +1,9 @@
 using UnityEngine;
+using System;
 
-public class DamageUpSkill : MonoBehaviour
+public class DamageUpSkill : Skill
 {
-    [SerializeField] private float _damageToAdd = 10;
+    [SerializeField] private float _damageToAdd = 0.1f;
     [SerializeField] private SkillData _skillData;
 
     private void Start()
@@ -10,7 +11,7 @@ public class DamageUpSkill : MonoBehaviour
         SkillMechanic();
     }
 
-    private void SkillMechanic()
+    public override void SkillMechanic()
     {
         SwortAtack swortAtack = gameObject.GetComponentInChildren<SwortAtack>();
         swortAtack.IncreaseSwordDamage(_damageToAdd);

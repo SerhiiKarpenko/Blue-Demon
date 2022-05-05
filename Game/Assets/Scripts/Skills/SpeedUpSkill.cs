@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerMovement))]
-public class SpeedUpSkill : MonoBehaviour
+public class SpeedUpSkill : Skill
 {
     [SerializeField] private float _speedToAdd = 1;
     [SerializeField] private SkillData _skillData;
@@ -10,8 +10,7 @@ public class SpeedUpSkill : MonoBehaviour
     {
         SkillMechanic();
     }
-
-    private void SkillMechanic()
+    public override void SkillMechanic()
     {
         PlayerMovement playerMovement = GetComponent<PlayerMovement>();
         playerMovement.IncreasePlayerMoveSpeed(_speedToAdd);

@@ -1014,7 +1014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _skillCanvasManager: {fileID: 1612284207}
   _experienceSlider: {fileID: 641399861}
-  _amoutToNextLevel: 30
+  _amoutToNextLevel: 1
 --- !u!114 &280478421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2213,6 +2213,7 @@ GameObject:
   - component: {fileID: 603999903}
   - component: {fileID: 603999902}
   - component: {fileID: 603999901}
+  - component: {fileID: 603999904}
   m_Layer: 5
   m_Name: FirstSkillSlot
   m_TagString: Untagged
@@ -2287,9 +2288,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1612284207}
-        m_TargetAssemblyTypeName: SkillCanvasManager, Assembly-CSharp
-        m_MethodName: OnSkillSlotClikc
+      - m_Target: {fileID: 603999904}
+        m_TargetAssemblyTypeName: SkillDataOnSkillSlot, Assembly-CSharp
+        m_MethodName: OnSkillSlotClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2337,6 +2338,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603999899}
   m_CullTransparentMesh: 1
+--- !u!114 &603999904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603999899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c0d29de58063d47b74c51f5ecb8ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkillData: {fileID: 0}
+  _skillsCanvas: {fileID: 64599536}
+  _player: {fileID: 280478410}
 --- !u!1 &641399859
 GameObject:
   m_ObjectHideFlags: 0
@@ -4482,19 +4498,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillDatas:
-  - {fileID: 11400000, guid: 1c1d341ed4780ed48ae0f3971d1c131a, type: 2}
-  - {fileID: 11400000, guid: 7b3e620028edaed44a08fcc8b611c480, type: 2}
-  - {fileID: 11400000, guid: 3c251a5c3053a5e418fb75b4ab1c5a96, type: 2}
   - {fileID: 11400000, guid: 05b44dca9808b564495e739f7bfe1358, type: 2}
-  - {fileID: 11400000, guid: f8a5f1ea27322a8459388ae48e4dd43c, type: 2}
   - {fileID: 11400000, guid: d18fedaf05a5c5041b72854bf4601cac, type: 2}
   - {fileID: 11400000, guid: cff881728c0c1ba4fa71dad0cd697807, type: 2}
-  - {fileID: 11400000, guid: 3be66548d692ed84794e1e5669671d86, type: 2}
+  _skillDatasOnSkillSlots:
+  - {fileID: 603999904}
+  - {fileID: 1615686709}
+  - {fileID: 1888284696}
   _skillSlots:
   - {fileID: 603999899}
   - {fileID: 1615686704}
   - {fileID: 1888284691}
   _skillsCanvas: {fileID: 64599536}
+  _player: {fileID: 280478410}
   _skillImages:
   - {fileID: 1916190283}
   - {fileID: 1860846875}
@@ -4507,7 +4523,6 @@ MonoBehaviour:
   - {fileID: 1854845111}
   - {fileID: 1908394039}
   - {fileID: 1948882681}
-  _player: {fileID: 280478410}
 --- !u!4 &1612284208
 Transform:
   m_ObjectHideFlags: 0
@@ -4535,6 +4550,7 @@ GameObject:
   - component: {fileID: 1615686708}
   - component: {fileID: 1615686707}
   - component: {fileID: 1615686706}
+  - component: {fileID: 1615686709}
   m_Layer: 5
   m_Name: SecondSkillSlot
   m_TagString: Untagged
@@ -4609,9 +4625,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1612284207}
-        m_TargetAssemblyTypeName: SkillCanvasManager, Assembly-CSharp
-        m_MethodName: OnSkillSlotClikc
+      - m_Target: {fileID: 1615686709}
+        m_TargetAssemblyTypeName: SkillDataOnSkillSlot, Assembly-CSharp
+        m_MethodName: OnSkillSlotClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4659,6 +4675,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1615686704}
   m_CullTransparentMesh: 1
+--- !u!114 &1615686709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615686704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c0d29de58063d47b74c51f5ecb8ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkillData: {fileID: 0}
+  _skillsCanvas: {fileID: 64599536}
+  _player: {fileID: 280478410}
 --- !u!1001 &1616066233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5926,6 +5957,7 @@ GameObject:
   - component: {fileID: 1888284695}
   - component: {fileID: 1888284694}
   - component: {fileID: 1888284693}
+  - component: {fileID: 1888284696}
   m_Layer: 5
   m_Name: ThirdSkillSlot
   m_TagString: Untagged
@@ -6000,9 +6032,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1612284207}
-        m_TargetAssemblyTypeName: SkillCanvasManager, Assembly-CSharp
-        m_MethodName: OnSkillSlotClikc
+      - m_Target: {fileID: 1888284696}
+        m_TargetAssemblyTypeName: SkillDataOnSkillSlot, Assembly-CSharp
+        m_MethodName: OnSkillSlotClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6050,6 +6082,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888284691}
   m_CullTransparentMesh: 1
+--- !u!114 &1888284696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888284691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c0d29de58063d47b74c51f5ecb8ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkillData: {fileID: 0}
+  _skillsCanvas: {fileID: 64599536}
+  _player: {fileID: 280478410}
 --- !u!1 &1908394037
 GameObject:
   m_ObjectHideFlags: 0
@@ -6934,6 +6981,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireBall
       objectReference: {fileID: 0}
+    - target: {fileID: 332397679922525948, guid: 4e089bf599fc69c4cbb786a0d5d2f88f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 332397679922525951, guid: 4e089bf599fc69c4cbb786a0d5d2f88f, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -7294,6 +7345,10 @@ PrefabInstance:
     - target: {fileID: 2675473998430240588, guid: bcc131b7473f65b44ad4c84a3e6af5de, type: 3}
       propertyPath: m_Name
       value: BlueDemon
+      objectReference: {fileID: 0}
+    - target: {fileID: 2675473998430240588, guid: bcc131b7473f65b44ad4c84a3e6af5de, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2675473998430240592, guid: bcc131b7473f65b44ad4c84a3e6af5de, type: 3}
       propertyPath: m_FlipX

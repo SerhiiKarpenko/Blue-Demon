@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerHealth))]
-public class NewPowersSkill : MonoBehaviour
+public class NewPowersSkill : Skill
 {
     [SerializeField] private float _healthToAdd = 10;
     [SerializeField] private SkillData _skillData;
@@ -10,9 +10,11 @@ public class NewPowersSkill : MonoBehaviour
         SkillMechanic();
     }
 
-    private void SkillMechanic()
+    public override void SkillMechanic()
     {
         PlayerHealth playerHealth = GetComponent<PlayerHealth>();
         playerHealth.IncreaseMaxHealth(_healthToAdd);
     }
+
+
 }

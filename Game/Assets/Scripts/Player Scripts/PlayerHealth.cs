@@ -86,6 +86,6 @@ public class PlayerHealth : HealthAbstract
 
 	public void IncreaseMaxHealth(float maxHealth)
     {
-		_maxHealth = maxHealth;
+		_maxHealth += maxHealth;
     }
 }

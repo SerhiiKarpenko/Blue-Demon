@@ -15,3 +15,4 @@ MonoBehaviour:
   Icon: {fileID: 893112761, guid: e874c391735c3264ca466e28333d4b4a, type: 3}
   Name: Angel
   Description: Will save you once...
+  Skill: {fileID: 0}
