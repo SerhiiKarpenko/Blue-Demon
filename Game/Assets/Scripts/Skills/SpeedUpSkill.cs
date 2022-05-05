@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerMovement))]
 public class SpeedUpSkill : Skill
 {
-    [SerializeField] private float _speedToAdd = 1;
+    [SerializeField] private float _speedToAdd = 0.2f;
     [SerializeField] private SkillData _skillData;
 
     private void Start()

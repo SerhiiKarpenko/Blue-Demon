@@ -36,6 +36,13 @@ public class SkillDataOnSkillSlot : MonoBehaviour
 					AddToPlayer(_player, skillToAdd.GetType());
 					break;
                 }
+			case "Blood axe":
+                {
+					skillToAdd = new BloodAxeSkill();
+					AddToPlayer(_player, skillToAdd.GetType());
+					break;
+                }
+
             default:
 				{
 					Debug.Log("Error, has no such skill");

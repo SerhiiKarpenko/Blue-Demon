@@ -2,11 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-
-/* TO DO
- *  ѕодумать как добавл€ть скилл на нашего персонажа 
-*/
-
 public class SkillCanvasManager : MonoBehaviour
 {
     [SerializeField] private SkillData[] _skillDatas;
