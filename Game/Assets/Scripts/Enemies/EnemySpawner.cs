@@ -40,7 +40,7 @@ public class EnemySpawner : MonoBehaviour
 			_enemiesToSpawn[0].Amount = _playerLevel.CurrentLevel;
 			for (int j = 0; j < _enemiesToSpawn[0].Amount; j++)
 			{
-				Instantiate(_enemiesToSpawn[0].EnemyPrefab, SetSpawnPosition(_enemySpawnPositions), Quaternion.identity);
+				EnemiesList.Instance.Enemies.Add(Instantiate(_enemiesToSpawn[0].EnemyPrefab, SetSpawnPosition(_enemySpawnPositions), Quaternion.identity));
 				yield return new WaitForSeconds(_enemiesToSpawn[0].TimeBetweenThisTypeOfEnemySpawning);
 			}
 

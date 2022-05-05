@@ -788,6 +788,7 @@ GameObject:
   - component: {fileID: 280478412}
   - component: {fileID: 280478411}
   - component: {fileID: 280478423}
+  - component: {fileID: 280478424}
   - component: {fileID: 280478413}
   - component: {fileID: 280478415}
   - component: {fileID: 280478414}
@@ -798,6 +799,7 @@ GameObject:
   - component: {fileID: 280478416}
   - component: {fileID: 280478417}
   - component: {fileID: 280478419}
+  - component: {fileID: 280478425}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1054,6 +1056,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axe: {fileID: 1161879559816164033, guid: e13b22c0d0abb304ba3bfebb0d9a76be, type: 3}
+  MagicStone: {fileID: 8908609867426907045, guid: 810669461dfcff04fadbfae109f97568, type: 3}
+--- !u!114 &280478424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280478410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700c57d1486a43e4891f74253c7f3b40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemies: []
+--- !u!114 &280478425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280478410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a148bf980ede0b46a6a99eef3546019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &328767296
 GameObject:
   m_ObjectHideFlags: 0
@@ -3158,7 +3186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1092468032072621753, guid: 0160a3ad7b0de264688b5eeb9608ed29, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1092468032072621755, guid: 0160a3ad7b0de264688b5eeb9608ed29, type: 3}
       propertyPath: m_RootOrder
@@ -4609,6 +4637,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 05b44dca9808b564495e739f7bfe1358, type: 2}
   - {fileID: 11400000, guid: d18fedaf05a5c5041b72854bf4601cac, type: 2}
   - {fileID: 11400000, guid: cff881728c0c1ba4fa71dad0cd697807, type: 2}
+  - {fileID: 11400000, guid: f8a5f1ea27322a8459388ae48e4dd43c, type: 2}
   _skillDatasOnSkillSlots:
   - {fileID: 603999904}
   - {fileID: 1615686709}
@@ -7293,7 +7322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1092468032072621753, guid: 0160a3ad7b0de264688b5eeb9608ed29, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1092468032072621755, guid: 0160a3ad7b0de264688b5eeb9608ed29, type: 3}
       propertyPath: m_RootOrder
@@ -7301,11 +7330,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1092468032072621755, guid: 0160a3ad7b0de264688b5eeb9608ed29, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.44
+      value: -18.98
       objectReference: {fileID: 0}
     - target: {fileID: 1092468032072621755, guid: 0160a3ad7b0de264688b5eeb9608ed29, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.32
+      value: -1.78
       objectReference: {fileID: 0}
     - target: {fileID: 1092468032072621755, guid: 0160a3ad7b0de264688b5eeb9608ed29, type: 3}
       propertyPath: m_LocalPosition.z

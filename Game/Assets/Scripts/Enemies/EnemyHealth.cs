@@ -33,6 +33,7 @@ public class EnemyHealth : HealthAbstract
 
     public override void Death()
 	{
+		EnemiesList.Instance.Enemies.Remove(gameObject);
 		base.Death();
 		gameObject.SetActive(false);
 		GameObject stone = Instantiate(_experienceStone, transform.position, Quaternion.identity);
