@@ -63,10 +63,18 @@ public class PlayerHealth : HealthAbstract
 
 	public override void Death()
 	{
-		gameObject.SetActive(false);
-		_playerUI.SetActive(false);
-		PlayerPrefs.SetInt("Player_level", _currentLevel.CurrentLevel);
-		Events.OnPlayerDeath();
+		if (gameObject.TryGetComponent(out AngelSkill angelSkill))
+		{
+			angelSkill.SkillMechanic();
+			Destroy(angelSkill);
+		}
+		else
+		{
+			gameObject.SetActive(false);
+			_playerUI.SetActive(false);
+			PlayerPrefs.SetInt("Player_level", _currentLevel.CurrentLevel);
+			Events.OnPlayerDeath();
+		}
 	}
 
 
@@ -88,4 +96,13 @@ public class PlayerHealth : HealthAbstract
     {
 		_maxHealth += maxHealth;
     }
+
+	public void SetCurrentHealth(float health)
+    {
+		_currentHealth = health;
+		onChangeHp?.Invoke(_currentHealth);
+    }
+
+
+	
 }

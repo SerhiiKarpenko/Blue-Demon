@@ -47,7 +47,13 @@ public class SkillDataOnSkillSlot : MonoBehaviour
 					skillToAdd = new MagicStoneSkill();
 					AddToPlayer(_player, skillToAdd.GetType());
 					break;
-                }				
+                }
+			case "Angel":
+                {
+					skillToAdd = new AngelSkill();
+					AddToPlayer(_player, skillToAdd.GetType());
+					break;
+				}
 
             default:
 				{

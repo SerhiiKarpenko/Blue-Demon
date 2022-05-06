@@ -5,7 +5,6 @@ using UnityEngine;
 public class MoveAndRotateTowardsClosestEnemy : MonoBehaviour
 {
     private float _speed = 7.0f;
-    private float _rotationSpeed = 60f;
     private Transform _closestEnemy;
 
     void Start()
@@ -27,10 +26,7 @@ public class MoveAndRotateTowardsClosestEnemy : MonoBehaviour
     private void RotateTowardsClosestEnemyEnemy()
     {
         Vector3 directionToFace = _closestEnemy.position - transform.position;
-       // Vector3 rotatedDirectionToFace = Quaternion.Euler(0, 0, 90) * directionToFace;
         transform.rotation = Quaternion.LookRotation(Vector3.forward, directionToFace);
-        //transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
-    
     }
 
     private Transform GetClosestToPlayerEnemy()

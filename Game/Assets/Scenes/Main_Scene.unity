@@ -1056,6 +1056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Axe: {fileID: 1161879559816164033, guid: e13b22c0d0abb304ba3bfebb0d9a76be, type: 3}
   MagicStone: {fileID: 8908609867426907045, guid: 810669461dfcff04fadbfae109f97568, type: 3}
+  Angel: {fileID: 2170691368500239078, guid: 78661a62616797247a4e14a7dc9aab2a, type: 3}
 --- !u!114 &280478424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1120,7 +1121,7 @@ MonoBehaviour:
   - EnemyPrefab: {fileID: 1092468032072621753, guid: 0160a3ad7b0de264688b5eeb9608ed29, type: 3}
     Amount: 3
     TimeBetweenThisTypeOfEnemySpawning: 1
-    TimeBetweenWave: 6
+    TimeBetweenWave: 10
   - EnemyPrefab: {fileID: 332397679922525948, guid: 4e089bf599fc69c4cbb786a0d5d2f88f, type: 3}
     Amount: 0
     TimeBetweenThisTypeOfEnemySpawning: 0
@@ -4625,6 +4626,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d18fedaf05a5c5041b72854bf4601cac, type: 2}
   - {fileID: 11400000, guid: cff881728c0c1ba4fa71dad0cd697807, type: 2}
   - {fileID: 11400000, guid: f8a5f1ea27322a8459388ae48e4dd43c, type: 2}
+  - {fileID: 11400000, guid: 1c1d341ed4780ed48ae0f3971d1c131a, type: 2}
   _skillDatasOnSkillSlots:
   - {fileID: 603999904}
   - {fileID: 1615686709}
@@ -7118,7 +7120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 332397679922525948, guid: 4e089bf599fc69c4cbb786a0d5d2f88f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 332397679922525951, guid: 4e089bf599fc69c4cbb786a0d5d2f88f, type: 3}
       propertyPath: m_RootOrder

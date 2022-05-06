@@ -4,4 +4,5 @@ public class ObjectForSkillsHolder : MonoBehaviour
 {
     public GameObject Axe;
     public GameObject MagicStone;
+    public GameObject Angel;
 }
