@@ -54,6 +54,19 @@ public class SkillDataOnSkillSlot : MonoBehaviour
 					AddToPlayer(_player, skillToAdd.GetType());
 					break;
 				}
+			case "Strange book":
+                {
+					skillToAdd = new StrangeBookSkill();
+					if(_player.TryGetComponent(out StrangeBookSkill strangeBookSkill))
+                    {
+						strangeBookSkill.BonusExperience += 0.5f;
+                    }
+					else
+                    {
+						AddToPlayer(_player, skillToAdd.GetType());
+                    }
+					break;
+                }
 
             default:
 				{

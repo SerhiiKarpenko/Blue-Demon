@@ -25,6 +25,11 @@ public class PlayerColiisions : MonoBehaviour
 		if(collision.gameObject.GetComponent<Experience>() != null)
 		{
 			float amount = collision.gameObject.GetComponent<Experience>().Amount;
+			if (gameObject.TryGetComponent(out StrangeBookSkill strangeBookSkill))
+			{
+				amount += strangeBookSkill.BonusExperience;
+			}
+			Debug.Log("Amount " + amount.ToString());
 			Events.OnPlayerLevelUp();
 			_playerLevel.UpdateCurrentExperienceValue(amount);
 			Destroy(collision.gameObject);

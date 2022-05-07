@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveAndRotateTowardsClosestEnemy : MonoBehaviour
@@ -20,6 +18,11 @@ public class MoveAndRotateTowardsClosestEnemy : MonoBehaviour
 
     private void MoveTowardsClosestEnemy()
     {
+        if (_closestEnemy.gameObject == null)
+        {
+            Destroy(gameObject);
+            return;
+        }
         transform.position = Vector3.MoveTowards(transform.position, _closestEnemy.transform.position, _speed * Time.deltaTime);
     }
 
