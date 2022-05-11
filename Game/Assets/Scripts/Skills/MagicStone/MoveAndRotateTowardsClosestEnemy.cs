@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MoveAndRotateTowardsClosestEnemy : MonoBehaviour
 {
-    private float _speed = 7.0f;
+    private float _speed = 0.0f;
     private Transform _closestEnemy;
 
     void Start()
@@ -18,7 +18,7 @@ public class MoveAndRotateTowardsClosestEnemy : MonoBehaviour
 
     private void MoveTowardsClosestEnemy()
     {
-        if (_closestEnemy.gameObject == null)
+        if(_closestEnemy == null)
         {
             Destroy(gameObject);
             return;
@@ -28,6 +28,10 @@ public class MoveAndRotateTowardsClosestEnemy : MonoBehaviour
 
     private void RotateTowardsClosestEnemyEnemy()
     {
+        if (_closestEnemy == null)
+        { 
+            return;
+        }
         Vector3 directionToFace = _closestEnemy.position - transform.position;
         transform.rotation = Quaternion.LookRotation(Vector3.forward, directionToFace);
     }
