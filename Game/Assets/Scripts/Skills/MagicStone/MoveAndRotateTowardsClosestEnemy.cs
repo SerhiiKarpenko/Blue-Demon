@@ -20,11 +20,6 @@ public class MoveAndRotateTowardsClosestEnemy : MonoBehaviour
 
     private void MoveTowardsClosestEnemy()
     {
-        if (_closestEnemy.gameObject == null)
-        {
-            Destroy(gameObject);
-            return;
-        }
         if(_closestEnemy == null)
         {
             Destroy(gameObject);
