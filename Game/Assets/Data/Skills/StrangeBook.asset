@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: -1879064725, guid: e874c391735c3264ca466e28333d4b4a, type: 3}
   Name: Strange book
-  Description: If you have this book, each of your battles will be give you more
-    knowledge.
+  Description: Realy strange book
