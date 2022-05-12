@@ -17,8 +17,7 @@ public class PlayerHealth : HealthAbstract
 	public float MaxHealth => _maxHealth;
 	public float CurrentHealth => _currentHealth;
 
-
-    private void Awake()
+	private void Awake()
     {
 		_timer = _timeWaitToHeal;
     }
@@ -70,10 +69,10 @@ public class PlayerHealth : HealthAbstract
 		}
 		else
 		{
+			Events.OnPlayerDeath();
 			gameObject.SetActive(false);
 			_playerUI.SetActive(false);
 			PlayerPrefs.SetInt("Player_level", _currentLevel.CurrentLevel);
-			Events.OnPlayerDeath();
 		}
 	}
 

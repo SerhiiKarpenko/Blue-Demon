@@ -13,7 +13,7 @@ public class Events : MonoBehaviour
 	public static event KilledEnemyCounterRiseUp CounterRisedUp;
 	public static int killedEnemiesCount = 0;
 
-	public static void OnKilledEnemyCounterRisedUp()
+    public static void OnKilledEnemyCounterRisedUp()
     {
 		CounterRisedUp.Invoke(++killedEnemiesCount);
     }

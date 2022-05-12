@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveAndRotateTowardsClosestEnemy : MonoBehaviour
 {
-    private float _speed = 0.0f;
+    private float _speed = 7.0f;
     private Transform _closestEnemy;
 
     void Start()
@@ -51,7 +51,6 @@ public class MoveAndRotateTowardsClosestEnemy : MonoBehaviour
                 minDist = dist;
             }
         }
-
         return closestEnemy;
     }
 }

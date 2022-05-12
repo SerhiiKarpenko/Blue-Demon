@@ -21,9 +21,9 @@ public class EnemySpawner : MonoBehaviour
 	private void Start()
 	{
 		StartCoroutine(BatSpawner());
+		StartCoroutine(FireBallSpawner());
 	}
 	
-
 
 	private Vector3 SetSpawnPosition(Transform[] enemySpawnPositions)
 	{
@@ -32,7 +32,7 @@ public class EnemySpawner : MonoBehaviour
 	}
 	
 
-	IEnumerator BatSpawner()
+	private IEnumerator BatSpawner()
 	{
 		yield return new WaitForSeconds(_timeBeforeEmeiesSpawning);
 		while (true)
@@ -47,4 +47,23 @@ public class EnemySpawner : MonoBehaviour
 			yield return new WaitForSeconds(_enemiesToSpawn[0].TimeBetweenWave);
 		}
 	}
+
+	private IEnumerator FireBallSpawner()
+    {
+		yield return new WaitForSeconds(_timeBeforeEmeiesSpawning);
+		while (true)
+        {
+			_enemiesToSpawn[1].Amount = _playerLevel.CurrentLevel - 3;
+			if (_enemiesToSpawn[1].Amount > 0)
+			{
+				for (int i = 0; i < _enemiesToSpawn[1].Amount; i++)
+				{
+					EnemiesList.Instance.Enemies.Add(Instantiate(_enemiesToSpawn[1].EnemyPrefab, SetSpawnPosition(_enemySpawnPositions), Quaternion.identity));
+					yield return new WaitForSeconds(_enemiesToSpawn[1].TimeBetweenThisTypeOfEnemySpawning);
+				}
+			}
+			yield return new WaitForSeconds(_enemiesToSpawn[1].TimeBetweenWave);
+        }
+    }
+
 }
