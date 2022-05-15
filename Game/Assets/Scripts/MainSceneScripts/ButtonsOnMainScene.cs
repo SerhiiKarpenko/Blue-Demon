@@ -28,7 +28,11 @@ public class ButtonsOnMainScene : MonoBehaviour
 
     public void LoadMenu()
     {
+        Events.killedEnemiesCount = 0;
+        Events.PlayerDied -= DeathSceneLoad.Instance.LoadlLevelWhenPlayerIsDead;
         SceneManager.LoadScene("Main_menu");
+        Time.timeScale = 1f;
+
     }
 
 

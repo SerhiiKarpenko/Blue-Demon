@@ -8,13 +8,17 @@ public class DeathSceneLoad : MonoBehaviour
 {
     [SerializeField] private Animator _transition;
 
+    public static DeathSceneLoad Instance;
+
+
     private void Awake()
     {
+        Instance = this;
         Events.PlayerDied += LoadlLevelWhenPlayerIsDead;
     }
 
 
-   public void LoadlLevelWhenPlayerIsDead() => StartCoroutine(LoadLevel());
+    public void LoadlLevelWhenPlayerIsDead() => StartCoroutine(LoadLevel());
 
     IEnumerator LoadLevel()
     {
