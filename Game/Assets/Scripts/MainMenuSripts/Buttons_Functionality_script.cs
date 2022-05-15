@@ -63,4 +63,9 @@ public class Buttons_Functionality_script : MonoBehaviour
 		_saveStatsForSword.GetSwordDamageSpeedSprite(4);
 		OnPlayButtonClick();
 	}
+
+	public void OpenUrl(string url)
+    {
+		Application.OpenURL(url);
+    }
 }

@@ -1214,8 +1214,8 @@ MonoBehaviour:
   _playerUI: {fileID: 125110067}
   _currentHealth: 0
   _maxHealth: 100
-  _healPower: 0.05
-  _timeWaitToHeal: 2
+  _healPower: 0.03
+  _timeWaitToHeal: 3
   isAtacked: 0
 --- !u!114 &280478415
 MonoBehaviour:
