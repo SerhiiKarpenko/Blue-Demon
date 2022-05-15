@@ -3375,6 +3375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pauseMenu: {fileID: 852295254}
   _playerUI: {fileID: 125110067}
+  _audioMixer: {fileID: 24100000, guid: 67fde2df4d6677544a5f12cbcda0950e, type: 2}
 --- !u!114 &653791319
 MonoBehaviour:
   m_ObjectHideFlags: 0
