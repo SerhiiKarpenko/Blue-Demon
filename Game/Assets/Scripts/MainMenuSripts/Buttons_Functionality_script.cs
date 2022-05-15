@@ -10,6 +10,7 @@ public class Buttons_Functionality_script : MonoBehaviour
 	[SerializeField] private Animator _transitionToMainScene;
 	[SerializeField] private GameObject _mainSceneLoaderObject;
 	private SaveStatsForSword _saveStatsForSword;
+	[SerializeField] private VolumeScript _volumeScript;
     //[SerializeField] private GameObject LoadingScreen;
 
 
@@ -21,6 +22,7 @@ public class Buttons_Functionality_script : MonoBehaviour
     public void OnPlayButtonClick()
 	{
 		StartCoroutine(LoadMainScene());
+		_volumeScript.SaveVolume();
 	}
 
 
