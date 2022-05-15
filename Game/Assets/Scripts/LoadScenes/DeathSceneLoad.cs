@@ -24,7 +24,11 @@ public class DeathSceneLoad : MonoBehaviour
     {
         _transition.SetTrigger("Death");
         yield return new WaitForSeconds(2f);
-        Events.PlayerDied -= LoadlLevelWhenPlayerIsDead;
         SceneManager.LoadScene("Death_Screen");
+    }
+
+    private void OnDestroy()
+    {
+        Events.PlayerDied -= LoadlLevelWhenPlayerIsDead;
     }
 }

@@ -52,5 +52,13 @@ public class PlayerUI : MonoBehaviour
 		_killedEnemyCounterText.text = "Enemies killed: " + countOfKilledEnemy.ToString();
     }
 
+    private void OnDestroy()
+    {
+		PlayerHealth.onChangeHp -= OnPlayerHealthPointsChange;
+		Events.OnPlayerExperienceChanged -= ChangeExperienceSliderValue;
+		Events.OnPlayerLevelChanged -= UpdatePlayerLevlText;
+		Events.CounterRisedUp -= ChangeKilledEnemyCounterValue;
+	}
+
 
 }

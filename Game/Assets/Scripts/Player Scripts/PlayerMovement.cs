@@ -32,10 +32,20 @@ public class PlayerMovement : MonoBehaviour
 			_playerAnimator.SetInteger("Moves", 1);
 			CheckIsPlayerMoving(true);
 		}
+		else if(_joystick.Vertical >= .2f)
+        {
+			_playerAnimator.SetInteger("Moves", 1);
+		}
+		else if(_joystick.Vertical <= -.2f)
+        {
+			_playerAnimator.SetInteger("Moves", 1);
+		}
 		else
         {
 			CheckIsPlayerMoving(false);
 		}
+
+		
 	}
 
 	private void CheckIsPlayerMoving(bool isMoving)
