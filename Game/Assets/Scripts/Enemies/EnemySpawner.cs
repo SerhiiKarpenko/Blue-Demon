@@ -22,6 +22,7 @@ public class EnemySpawner : MonoBehaviour
 	{
 		StartCoroutine(BatSpawner());
 		StartCoroutine(FireBallSpawner());
+		StartCoroutine(BlueDemonSpawner());
 	}
 	
 
@@ -65,5 +66,23 @@ public class EnemySpawner : MonoBehaviour
 			yield return new WaitForSeconds(_enemiesToSpawn[1].TimeBetweenWave);
         }
     }
+
+	private IEnumerator BlueDemonSpawner()
+    {
+		yield return new WaitForSeconds(_timeBeforeEmeiesSpawning);
+		while(true)
+        {
+			_enemiesToSpawn[2].Amount = _playerLevel.CurrentLevel - 8;
+			if(_enemiesToSpawn[2].Amount > 0)
+            {
+				for(int i = 0; i < _enemiesToSpawn[2].Amount; i++)
+                {
+					EnemiesList.Instance.Enemies.Add(Instantiate(_enemiesToSpawn[2].EnemyPrefab, SetSpawnPosition(_enemySpawnPositions), Quaternion.identity));
+					yield return new WaitForSeconds(_enemiesToSpawn[2].TimeBetweenThisTypeOfEnemySpawning);
+				}
+            }
+			yield return new WaitForSeconds(_enemiesToSpawn[2].TimeBetweenWave);
+        }
+	}
 
 }
