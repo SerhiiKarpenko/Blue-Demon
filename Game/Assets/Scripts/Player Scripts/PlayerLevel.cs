@@ -40,4 +40,9 @@ public class PlayerLevel : MonoBehaviour
         _currentAmount += amount;
         Events.OnPlayerExperienceAmountChanged(_currentAmount);
     }
+
+    private void OnDestroy()
+    {
+        Events.PlayerLevelUp -= PlayerLevelUp;
+    }
 }

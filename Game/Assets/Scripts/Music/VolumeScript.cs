@@ -6,27 +6,44 @@ using UnityEngine.Audio;
 
 public class VolumeScript : MonoBehaviour
 {
-    [SerializeField] private AudioMixer _audioMixer;
-    [SerializeField] private Slider _volumeSlider;
+	[SerializeField] private AudioMixer _audioMixer;
+	[SerializeField] private AudioMixer _effectsMixer;
+	[SerializeField] private Slider _volumeSlider;
+	[SerializeField] private Slider _effectsSlider;
 
-    private void Start()
+	private void Start()
+	{
+		_volumeSlider.value = PlayerPrefs.GetFloat("music_volume");
+		_effectsSlider.value = PlayerPrefs.GetFloat("effects_volume");
+	}
+
+	public void SetMusicVolume(float volume)
+	{
+		_audioMixer.SetFloat("MusicVolume", volume);
+	}
+
+	public void SetEffectsVolume(float volume)
     {
-        if (PlayerPrefs.HasKey("volume"))
-            _volumeSlider.value = PlayerPrefs.GetFloat("volume");
+		_effectsMixer.SetFloat("EffectsVolume", volume);
     }
 
-    public void SetVolume(float volume)
-    {
-        _audioMixer.SetFloat("volume", volume);
-    }
+	public void SaveMusicVolume()
+	{
+		float volume;
+		bool result = _audioMixer.GetFloat("MusicVolume", out volume);
+		if (result)
+			PlayerPrefs.SetFloat("music_volume", volume);
+		else
+			return;
+	}
 
-    public void SaveVolume()
+	public void SaveEffectsVolume()
     {
-        float volume;
-        bool result = _audioMixer.GetFloat("volume", out volume);
-        if (result)
-            PlayerPrefs.SetFloat("volume", volume);
-        else
-            return;
-    }
+		float volume;
+		bool result = _effectsMixer.GetFloat("EffectsVolume", out volume);
+		if (result)
+			PlayerPrefs.SetFloat("effects_volume", volume);
+		else
+			return;
+	}
 }

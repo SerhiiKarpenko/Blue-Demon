@@ -22,7 +22,8 @@ public class Buttons_Functionality_script : MonoBehaviour
     public void OnPlayButtonClick()
 	{
 		StartCoroutine(LoadMainScene());
-		_volumeScript.SaveVolume();
+		_volumeScript.SaveMusicVolume();
+		_volumeScript.SaveEffectsVolume();
 	}
 
 
