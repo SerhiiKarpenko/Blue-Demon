@@ -3,6 +3,8 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerLevel))]
 public class PlayerHealth : HealthAbstract
 {
+	[SerializeField] private AudioClip _deathSound;
+	[SerializeField] private GameObject _deathEffect;
 	[SerializeField] private GameObject _playerUI;
 	[SerializeField] private float _currentHealth;
 	[SerializeField] private float _maxHealth;
@@ -69,6 +71,8 @@ public class PlayerHealth : HealthAbstract
 		}
 		else
 		{
+			AudioManager.Instance.Play(_deathSound.name);
+			Instantiate(_deathEffect, transform.position, Quaternion.identity);
 			Events.OnPlayerDeath();
 			gameObject.SetActive(false);
 			_playerUI.SetActive(false);

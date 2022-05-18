@@ -17,8 +17,8 @@ public class ButtonsOnMainScene : MonoBehaviour
 
     private void Start()
     {
-        _effectsVolume = GetAudioMixerVolume(_effectsMixer, "effects_volume");
-        _musicVolume = GetAudioMixerVolume(_musicMixer, "music_volume");
+        _effectsVolume = GetAudioMixerVolume(_effectsMixer, "EffectsVolume");
+        _musicVolume = GetAudioMixerVolume(_musicMixer, "MusicVolume");
     }
 
     public void Resume()
@@ -27,8 +27,8 @@ public class ButtonsOnMainScene : MonoBehaviour
         _playerUI.SetActive(true);
         Time.timeScale = 1f;
         _isPaused = false;
-        SetAudioMixerVolume(_effectsVolume, _effectsMixer, "effects_volume");
-        SetAudioMixerVolume(_musicVolume, _musicMixer, "music_volume");
+        SetAudioMixerVolume(_effectsVolume, _effectsMixer, "EffectsVolume");
+        SetAudioMixerVolume(_musicVolume, _musicMixer, "MusicVolume");
     }
 
     public void Pause()
@@ -37,8 +37,8 @@ public class ButtonsOnMainScene : MonoBehaviour
         _playerUI.SetActive(false);
         _isPaused = true;
         Time.timeScale = 0f;
-        SetAudioMixerVolume(-80f, _effectsMixer, "effects_volume");
-        SetAudioMixerVolume(-80f, _musicMixer, "music_volume");
+        SetAudioMixerVolume(-80f, _effectsMixer, "EffectsVolume");
+        SetAudioMixerVolume(-80f, _musicMixer, "MusicVolume");
     }
 
     public void LoadMenu()

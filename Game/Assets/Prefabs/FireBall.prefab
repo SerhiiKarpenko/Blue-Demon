@@ -219,8 +219,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1911a7b707ee534699ae91f44addc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _deathEffect: {fileID: 41092189480021435, guid: 7fccaa1a57097494aac549a831989acf, type: 3}
   _experienceStone: {fileID: 6230496993467538329, guid: 79379770589292245b4f17f55c57680c, type: 3}
   _currentHealth: 0
+  "_death\u0421lip": {fileID: 8300000, guid: 9ea3720564e38a9489aaff2456e58b04, type: 3}
 --- !u!61 &3014395916588072639
 BoxCollider2D:
   m_ObjectHideFlags: 0
