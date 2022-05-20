@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-	private bool _isMoving = false;
 	[SerializeField] private float _speed = 3f;
 	[SerializeField] private Animator _playerAnimator;
 	[SerializeField] private Joystick _joystick;
+	private bool _isMoving = false;
 
 
     private void Update()
