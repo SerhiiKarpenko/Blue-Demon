@@ -3,7 +3,7 @@ In this game, you need to survive as long as possible.
 You have 5 sword to choose, each one have advantages against others.
 
 # Gameplay video
-https://www.youtube.com/watch?v=uUvXvOu6Q0o
+[Gameplay video](https://www.youtube.com/watch?v=uUvXvOu6Q0o)
 
 # Graphics style 
 Pixel art:
