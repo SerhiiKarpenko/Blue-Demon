@@ -1,3 +1,8 @@
+
+<p align="center">
+    <img src="https://img.shields.io/badge/Unity%20Version-2021.2.11f1-brightgreen" alt="Unity Version">
+</p>
+
 # Mobile game, (UNITY C#, OOP)
 In this game, you need to survive as long as possible.
 You have 5 sword to choose, each one have advantages against others.
